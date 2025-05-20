@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/About.css";
+import Skills from "../components/Skills";
 
 const About = () => {
   return (
@@ -15,6 +16,7 @@ const About = () => {
         <p>
           I'm currently open to new opportunities where I can contribute, learn, and grow as a developer.
         </p>
+        <Skills/>
 
         <a href="/Saliq_Nisar (1).pdf" download className="resume-button">Download Resume</a>
 

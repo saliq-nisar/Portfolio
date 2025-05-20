@@ -5,10 +5,17 @@ const Skills = () => {
   const skillSet = [
     { name: "HTML", level: "90%" },
     { name: "CSS", level: "85%" },
-    { name: "JavaScript", level: "80%" },
-    { name: "React", level: "75%" },
-    { name: "Flutter", level: "70%" },
-    { name: "Node.js", level: "65%" },
+    { name: "JavaScript", level: "90%" },
+    { name: "TypeScript", level: "90%" },
+    { name: "React", level: "100%" },
+    { name: "Flutter", level: "60%" },
+    { name: "MongoDB", level: "80%" },
+    { name: "PostgreSQL", level: "60%" },
+    { name: "MySQL", level: "60%" },
+    { name: "Express.js", level: "70%" },
+    { name: "Dart", level: "40%" },
+    { name: "MUI", level: "90%" },
+    { name: "Bootstrap", level: "60%" },
   ];
 
   return (
@@ -17,9 +24,13 @@ const Skills = () => {
       <div className="skills-container">
         {skillSet.map((skill, index) => (
           <div className="skill" key={index}>
-            <span>{skill.name}</span>
+            <span className="skill-name">{skill.name}</span>
             <div className="skill-bar">
-              <div className="skill-level" style={{ width: skill.level }}></div>
+              <div
+                className="skill-level"
+                style={{ width: skill.level }}
+                data-level={skill.level}
+              ></div>
             </div>
           </div>
         ))}
