@@ -1,0 +1,97 @@
+/* Home.css */
+.home {
+  height: 100vh;
+  background-color: var(--bg);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.intro {
+  text-align: center;
+  animation: fadeSlideIn 1s ease-out forwards;
+  opacity: 0;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: slideInTop 1s 0.2s ease-out forwards;
+}
+
+.intro h1 span {
+  color: #4f46e5;
+  font-weight: bold;
+  animation: pulseText 2s infinite;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeIn 1s 0.5s ease-out forwards;
+}
+
+.btn {
+  background-color: #4f46e5;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  background-color: #3730a3;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+/* Animations */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInTop {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulseText {
+  0%, 100% {
+    color: #4f46e5;
+    transform: scale(1);
+  }
+  50% {
+    color: #6366f1;
+    transform: scale(1.05);
+  }
+}

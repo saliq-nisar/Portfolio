@@ -1,0 +1,32 @@
+.skills {
+  padding: 4rem 2rem;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.skills-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.skill {
+  margin-bottom: 1.5rem;
+}
+
+.skill span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.skill-bar {
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-level {
+  background-color: #00e0ff;
+  height: 14px;
+  border-radius: 10px;
+}
