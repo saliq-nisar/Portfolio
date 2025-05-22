@@ -4,9 +4,9 @@ import "../styles/Projects.css";
 const Projects = () => {
   const projectList = [
     {
-      title: "E-commerce Website",
-      description: "An online store built with React, Firebase, and Stripe.",
-      link: "#",
+      title: "Air Gloss(E-comm) Website",
+      description: "An online store built with React with animations, showcasing my frontend skills .",
+      link: "https://github.com/saliq-nisar/e-comm",
     },
     {
       title: "Portfolio Website",
