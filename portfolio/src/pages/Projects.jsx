@@ -15,8 +15,8 @@ const Projects = () => {
     },
     {
       title: "DocApp",
-      description: "A doctor booking app made with Flutter and Firebase.",
-      link: "#",
+      description: "A doctor booking app made with React .",
+      link: "https://github.com/saliq-nisar/Portfolio",
     },
   ];
 
